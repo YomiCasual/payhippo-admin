@@ -1,4 +1,5 @@
 import { SearchIcon, LoanIcon } from "../Assets/icons";
+import LoanStatisticsCard from "../Components/LoanStatisticsCard";
 
 const DashboardMiddle = () => {
   return (
@@ -41,6 +42,9 @@ const DashboardMiddle = () => {
             <h3>₦2,450,600</h3>
           </div>
         </div>
+      </div>
+      <div>
+        <LoanStatisticsCard />
       </div>
     </div>
   );
