@@ -1,0 +1,102 @@
+.middle-wrapper {
+  flex: auto;
+}
+
+.input__field {
+  position: relative;
+
+  &--icon {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+  }
+
+  input {
+    padding: 1.5rem;
+    background-color: #fafafa;
+    min-width: 32rem;
+    border-radius: 6px;
+    border: none;
+
+    &::placeholder {
+      color: $ash-color;
+    }
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+}
+
+.dashboard__middle {
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+
+    h3 {
+      font-size: 3rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.stat__cards {
+  margin: 2rem 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  .stat__card {
+    min-width: 20rem;
+    flex: 1;
+    padding: 2.4rem 1.5rem;
+    background-color: rgba($primary-color, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+
+    &--icon {
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      background-color: $primary-color;
+      display: inline-block;
+      color: $primary-white;
+    }
+
+    &--content {
+      margin-top: 3rem;
+
+      p {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: $ash-color;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .danger {
+    background-color: rgba($secondary-color, 0.2) !important;
+
+    &__icon {
+      background-color: $secondary-color;
+    }
+  }
+  .warning {
+    background-color: rgba($tertiary-color, 0.2);
+
+    &__icon {
+      background-color: $tertiary-color;
+    }
+  }
+}
