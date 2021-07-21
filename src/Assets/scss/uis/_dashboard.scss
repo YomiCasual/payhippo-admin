@@ -1,4 +1,8 @@
 .dashboard {
   height: 100vh;
   display: flex;
+
+  @include responsive($desktop-s) {
+    flex-direction: column;
+  }
 }

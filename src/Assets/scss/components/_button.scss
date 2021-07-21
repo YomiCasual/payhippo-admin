@@ -10,6 +10,15 @@
   cursor: pointer;
   transition: 0.5s;
 
+  @include responsive($tablet) {
+    font-size: 1.4rem;
+
+    .icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
   &.primary {
     background: $primary-color;
     color: white;

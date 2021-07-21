@@ -8,10 +8,7 @@ import TransactionCard from "../Components/TransactionCard";
 const DashboardRight = () => {
   return (
     <div className="dashboard__right right-wrapper">
-      <div className="dashboard__right--header">
-        <NotificationIcon />
-        <img src={AvatarImg} alt="avatar-img" />
-      </div>
+      <UserAvatar />
       <div className="dashboard__right--content">
         <div className="top__users">
           <h3 className="top__users--title">Top Users</h3>
@@ -39,3 +36,10 @@ const DashboardRight = () => {
 };
 
 export default DashboardRight;
+
+export const UserAvatar = () => (
+  <div className="dashboard__right--header user__avatar">
+    <NotificationIcon />
+    <img src={AvatarImg} alt="avatar-img" />
+  </div>
+);

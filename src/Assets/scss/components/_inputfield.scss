@@ -1,5 +1,9 @@
 .input__field {
   position: relative;
+  @include responsive($mobile-m) {
+    min-width: 100%;
+    width: 100%;
+  }
 
   &--icon {
     position: absolute;
@@ -18,6 +22,11 @@
     min-width: 32rem;
     border-radius: 6px;
     border: none;
+
+    @include responsive($mobile-m) {
+      min-width: 100%;
+      width: 100%;
+    }
 
     &::placeholder {
       color: $ash-color;

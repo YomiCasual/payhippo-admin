@@ -1,8 +1,6 @@
 .middle-wrapper {
-  flex: auto;
+  flex: 1;
 }
-
-
 
 .dashboard__middle {
   &--content {
@@ -21,15 +19,45 @@
     align-items: center;
     padding: 0 2rem;
 
+    .title {
+      @include responsive($desktop-s) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .user__avatar {
+        display: none;
+        height: auto;
+        gap: 2rem;
+
+        .icon {
+          margin-right: 1rem;
+        }
+
+        @include responsive($desktop-s) {
+          display: block;
+        }
+      }
+    }
+
+    @include responsive($desktop-s) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 2rem;
+      padding-bottom: 2rem;
+      height: auto;
+      gap: 1rem;
+    }
+
     h3 {
       font-size: 3rem;
       font-weight: 300;
+
+      @include responsive($tablet) {
+        font-size: 2rem;
+      }
     }
   }
 }
-
-
-
-
-
-

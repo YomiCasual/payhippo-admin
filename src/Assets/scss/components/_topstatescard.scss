@@ -39,16 +39,31 @@
         height: 20px;
         border-radius: 50%;
         border: 5px solid $primary-color;
+
+        @include responsive($tablet) {
+          width: 10px;
+          height: 10px;
+          border-width: 2px;
+        }
       }
 
       .success {
         border: 5px solid $primary-green;
+        @include responsive($tablet) {
+          border-width: 2px;
+        }
       }
       .warning {
         border: 5px solid $tertiary-color;
+        @include responsive($tablet) {
+          border-width: 2px;
+        }
       }
       .danger {
         border: 5px solid $secondary-color;
+        @include responsive($tablet) {
+          border-width: 2px;
+        }
       }
 
       p {

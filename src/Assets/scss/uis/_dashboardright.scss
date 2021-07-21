@@ -10,9 +10,18 @@
   overflow: auto;
   display: flex;
   flex-direction: column;
+
+  @include responsive($desktop-s) {
+    width: 100%;
+  }
+
   &--header {
     height: 9rem;
     display: flex;
+
+    @include responsive($desktop-s) {
+      display: none;
+    }
 
     justify-content: flex-end;
     align-items: center;
@@ -28,5 +37,3 @@
     @include hide-scrollbar;
   }
 }
-
-

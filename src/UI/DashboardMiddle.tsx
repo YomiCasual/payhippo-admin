@@ -7,12 +7,17 @@ import {
 import LoanStatisticsCard from "../Components/LoanStatisticsCard";
 import TopStatesCard from "../Components/TopStatesCard";
 import StatsCard from "../Components/StatsCard";
+import { UserAvatar } from "./DashboardRight";
 
 const DashboardMiddle = () => {
   return (
     <div className="dashboard__middle middle-wrapper">
       <div className="dashboard__middle--header">
-        <h3>Dashboard</h3>
+        <div className="title">
+          <h3>Dashboard</h3>
+          <UserAvatar />
+        </div>
+
         <div className="input__field">
           <input type="text" placeholder="Search" />
           <div className="input__field--icon">
