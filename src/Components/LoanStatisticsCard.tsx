@@ -1,5 +1,5 @@
 import { Bar } from "react-chartjs-2";
-import { UploadIcon } from "../Assets/icons";
+import { UploadIcon } from "../Assets/icons/index";
 
 const LoanStatisticsCard = () => {
   return (

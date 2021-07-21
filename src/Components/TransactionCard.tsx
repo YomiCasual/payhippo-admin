@@ -1,5 +1,5 @@
 import { TranasctionType, TransactionsDataProps } from "../Api/types";
-import { ArrowDownIcon, MoreIcon, ArrowUpIcon } from "../Assets/icons";
+import { ArrowDownIcon, MoreIcon, ArrowUpIcon } from "../Assets/icons/index";
 
 type TransactionCardProps = {
   data: TransactionsDataProps;

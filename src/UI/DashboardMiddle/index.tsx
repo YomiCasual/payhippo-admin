@@ -3,7 +3,7 @@ import {
   LoanIcon,
   TicketIcon,
   UserGroupIcon,
-} from "../../Assets/icons";
+} from "../../Assets/icons/index";
 import LoanStatisticsCard from "../../Components/LoanStatisticsCard";
 import TopStatesCard from "../../Components/TopStatesCard";
 import StatsCard from "../../Components/StatsCard";

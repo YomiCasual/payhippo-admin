@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { TopUsersData, TransactionsData } from "../../Api";
-import { NotificationIcon } from "../../Assets/icons";
+import { NotificationIcon } from "../../Assets/icons/index";
 import AvatarImg from "../../Assets/images/Avatar.png";
 import TopUserCard from "../../Components/TopUserCard";
 import TransactionCard from "../../Components/TransactionCard";
