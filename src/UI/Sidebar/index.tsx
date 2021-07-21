@@ -6,7 +6,7 @@ import {
   LoanIcon,
   SettingsIcon,
   DashboardIcon,
-} from "../../Assets/icons/index";
+} from "../../Assets/Icons/index";
 
 const Sidebar = () => {
   return (
