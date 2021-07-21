@@ -1,0 +1,60 @@
+.top__states {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+
+  &--header {
+    label {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-right: 1rem;
+    }
+  }
+
+  &--graph {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    gap: 2rem;
+
+    .graph__container {
+      width: 70%;
+    }
+  }
+
+  .tag__class {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .tag__item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      .tag {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 5px solid $primary-color;
+      }
+
+      .success {
+        border: 5px solid $primary-green;
+      }
+      .warning {
+        border: 5px solid $tertiary-color;
+      }
+      .danger {
+        border: 5px solid $secondary-color;
+      }
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+  }
+}

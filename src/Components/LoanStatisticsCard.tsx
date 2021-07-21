@@ -1,13 +1,17 @@
 import { Bar } from "react-chartjs-2";
+import { UploadIcon } from "../Assets/icons";
 
 const LoanStatisticsCard = () => {
   return (
     <div className="loanstats__card">
       <div className="loanstats__card--header">
         <h3>Loan Statistics</h3>
-        <button>Export</button>
-        <Bar data={data} options={options} />
+        <button className="button primary">
+          <UploadIcon />
+          <span>Export</span>
+        </button>
       </div>
+      <Bar data={data} options={options} height={120} />
     </div>
   );
 };
@@ -15,11 +19,12 @@ const LoanStatisticsCard = () => {
 export default LoanStatisticsCard;
 
 const generalOptions = {
+  //   barThickness: 8,
   borderRadius: 50,
-  barPercentage: 0.4,
+  barPercentage: 0.5,
   borderSkipped: false,
-  base: 200,
-  categoryPercentage: 0.7,
+  //   base: 200,
+  categoryPercentage: 0.6,
 };
 
 const data = {
@@ -49,6 +54,15 @@ const data = {
 
 const options = {
   responsive: true,
+  plugins: {
+    legend: {
+      position: "bottom",
+      align: "center",
+      labels: {
+        boxWidth: 10,
+      },
+    },
+  },
   scales: {
     x: {
       grid: {

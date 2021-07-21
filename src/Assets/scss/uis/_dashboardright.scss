@@ -1,0 +1,32 @@
+.right-wrapper {
+  width: 36rem;
+  flex-shrink: 0;
+  background-color: rgba(#fef8e8, 0.4);
+}
+
+.dashboard__right {
+  padding: 0 4rem;
+  max-height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  &--header {
+    height: 9rem;
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      height: 3rem;
+    }
+  }
+
+  &--content {
+    overflow: auto;
+    @include hide-scrollbar;
+  }
+}
+
+

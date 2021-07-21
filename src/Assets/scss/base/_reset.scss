@@ -30,6 +30,23 @@ a {
   text-decoration: none;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  background-image: url("../../images/SelectIcon.svg");
+
+  background-position: 90% 50%;
+  background-size: 1rem 1rem;
+  background-repeat: no-repeat;
+  padding-right: 10%;
+  padding: 0.8rem 1.7rem;
+  border-radius: 6px;
+  border: 1px solid $ash-color;
+  min-width: 13re8;
+}
+
 .icon {
   width: 2.4rem;
   height: 2.4rem;

@@ -1,0 +1,16 @@
+.loanstats__card {
+  margin: 0 2rem;
+
+  padding: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(#e5e9f2, 0.4);
+
+  &--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+}

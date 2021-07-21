@@ -1,0 +1,41 @@
+.recent__transactions {
+  margin-top: 4rem;
+
+  &--container {
+    margin-top: 2rem;
+    .transaction__card {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding-bottom: 1.4rem;
+      border-bottom: 1px solid rgba($ash-color, 0.2);
+      margin-bottom: 2rem;
+      &--icon {
+        padding: 0.5rem 0.6rem;
+        background-color: $primary-color;
+        border-radius: 50%;
+        flex: none;
+        color: white;
+      }
+
+      .danger {
+        background-color: $secondary-color;
+      }
+
+      &--content {
+        flex: 1;
+
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 500;
+          color: $dark-color;
+        }
+
+        p {
+          font-size: 1rem;
+          color: $ash-color;
+        }
+      }
+    }
+  }
+}

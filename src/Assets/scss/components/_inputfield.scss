@@ -1,0 +1,30 @@
+.input__field {
+  position: relative;
+
+  &--icon {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+  }
+
+  input {
+    padding: 1.5rem;
+    background-color: #fafafa;
+    min-width: 32rem;
+    border-radius: 6px;
+    border: none;
+
+    &::placeholder {
+      color: $ash-color;
+    }
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+}

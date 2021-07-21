@@ -1,0 +1,27 @@
+.button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &.primary {
+    background: $primary-color;
+    color: white;
+  }
+
+  &:hover {
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
+  &:active {
+    outline: none;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.07);
+    transform: translateY(0);
+  }
+}
