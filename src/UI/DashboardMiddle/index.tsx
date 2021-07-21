@@ -3,18 +3,18 @@ import {
   LoanIcon,
   TicketIcon,
   UserGroupIcon,
-} from "../Assets/icons";
-import LoanStatisticsCard from "../Components/LoanStatisticsCard";
-import TopStatesCard from "../Components/TopStatesCard";
-import StatsCard from "../Components/StatsCard";
-import { UserAvatar } from "./DashboardRight";
+} from "../../Assets/icons";
+import LoanStatisticsCard from "../../Components/LoanStatisticsCard";
+import TopStatesCard from "../../Components/TopStatesCard";
+import StatsCard from "../../Components/StatsCard";
+import { UserAvatar } from "./../DashboardRight";
 
 const DashboardMiddle = () => {
   return (
     <div className="dashboard__middle middle-wrapper">
       <div className="dashboard__middle--header">
         <div className="title">
-          <h3>Dashboard</h3>
+          <h3 data-testid="dashboard-header">Dashboard</h3>
           <UserAvatar />
         </div>
 
@@ -29,7 +29,7 @@ const DashboardMiddle = () => {
         <div className="stat__cards">
           <StatsCard
             icon={<UserGroupIcon />}
-            title="Registerd users"
+            title="Registered users"
             value="₦2,450,600"
           />
           <StatsCard

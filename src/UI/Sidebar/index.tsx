@@ -1,4 +1,4 @@
-import Logo from "../Assets/images/payhippologo.png";
+import Logo from "../../Assets/images/payhippologo.png";
 import {
   UserIcon,
   TicketIcon,
@@ -6,13 +6,15 @@ import {
   LoanIcon,
   SettingsIcon,
   DashboardIcon,
-} from "../Assets/icons/";
+} from "../../Assets/icons/";
 
 const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="sidebar__logo">
-        <img src={Logo} alt="payhippo-logo" />
+        <img
+            data-testid="logo"
+        src={Logo} alt="payhippo-logo" />
       </div>
       <nav className="sidebar__nav">
         <ul className="sidebar__nav--container">

@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import { TopUsersData, TransactionsData } from "../Api";
-import { NotificationIcon } from "../Assets/icons";
-import AvatarImg from "../Assets/images/Avatar.png";
-import TopUserCard from "../Components/TopUserCard";
-import TransactionCard from "../Components/TransactionCard";
+import { TopUsersData, TransactionsData } from "../../Api";
+import { NotificationIcon } from "../../Assets/icons";
+import AvatarImg from "../../Assets/images/Avatar.png";
+import TopUserCard from "../../Components/TopUserCard";
+import TransactionCard from "../../Components/TransactionCard";
 
 const DashboardRight = () => {
   return (
