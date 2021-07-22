@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import MiniCardStats from "../common/MiniStatsCard";
 
 const RegisteredUserModal = () => {
   return (
@@ -17,7 +18,6 @@ const RegisteredUserModal = () => {
 };
 
 export default RegisteredUserModal;
-
 
 const RegisteredUserData = [
   {
