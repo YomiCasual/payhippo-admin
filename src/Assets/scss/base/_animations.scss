@@ -1,40 +1,35 @@
-@keyframes slideDown {
+@keyframes slowLoad {
   0% {
-    transform: translateY(-1rem);
+    visibility: hidden;
     opacity: 0;
   }
-  10% {
-    transform: translateY(0rem);
-    opacity: 100;
+  100% {
+    visibility: visible;
+    opacity: 1;
   }
 }
-@keyframes slideup {
+
+@keyframes slideFromTop {
   0% {
-    transform: translateY(1rem);
+    transform: translateY(-3rem);
+    visibility: hidden;
     opacity: 0;
   }
-  10% {
-    transform: translateY(0rem);
-    opacity: 100;
+  100% {
+    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
   }
 }
-@keyframes slideLeft {
+@keyframes zoomIn {
   0% {
-    transform: translateX(-5rem);
+    transform: scale(0.8);
+    visibility: hidden;
     opacity: 0;
   }
-  10% {
-    transform: translateX(0rem);
-    opacity: 100;
-  }
-}
-@keyframes slideRight {
-  0% {
-    transform: translateX(5rem);
-    opacity: 0;
-  }
-  10% {
-    transform: translateX(0rem);
-    opacity: 100;
+  100% {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
   }
 }

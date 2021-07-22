@@ -1,13 +1,9 @@
-import {
-  SearchIcon,
-  LoanIcon,
-  TicketIcon,
-  UserGroupIcon,
-} from "../../Assets/Icons/index";
-import LoanStatisticsCard from "../../Components/LoanStatisticsCard";
-import TopStatesCard from "../../Components/TopStatesCard";
-import StatsCard from "../../Components/StatsCard";
+import { SearchIcon } from "../../Assets/Icons/index";
+import LoanStatisticsCard from "../../Components/ui/LoanStatisticsCard";
+import TopStatesCard from "../../Components/ui/TopStatesCard";
 import { UserAvatar } from "./../DashboardRight";
+
+import StatsCardGroup from "../../Components/ui/StatsCardGroup";
 
 const DashboardMiddle = () => {
   return (
@@ -26,25 +22,7 @@ const DashboardMiddle = () => {
         </div>
       </div>
       <div className="dashboard__middle--content">
-        <div className="stat__cards">
-          <StatsCard
-            icon={<UserGroupIcon />}
-            title="Registered users"
-            value="₦2,450,600"
-          />
-          <StatsCard
-            icon={<LoanIcon />}
-            title="Total Loan disbursed"
-            value="₦90,450,600"
-            type="danger"
-          />
-          <StatsCard
-            icon={<TicketIcon />}
-            title="Unresolved Tickets"
-            value="40"
-            type="warning"
-          />
-        </div>
+        <StatsCardGroup />
         <div>
           <LoanStatisticsCard />
           <TopStatesCard />

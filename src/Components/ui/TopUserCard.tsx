@@ -1,6 +1,6 @@
-import UserAvatar from "../Assets/images/UserAvatar.png";
-import { MoreIcon } from "../Assets/Icons/index";
-import { TopUserDataProps } from "../Api/types";
+import UserAvatar from "../../Assets/images/UserAvatar.png";
+import { MoreIcon } from "../../Assets/Icons/index";
+import { TopUserDataProps } from "../../Api/types";
 
 type TopUserCardProps = {
   data: TopUserDataProps;

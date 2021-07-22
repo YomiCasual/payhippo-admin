@@ -3,6 +3,7 @@ type StatsCardProps = {
   title: string;
   value: string | number;
   type?: string;
+  onClick?: () => void;
 };
 
 const StatsCard: React.FC<StatsCardProps> = ({
@@ -10,9 +11,10 @@ const StatsCard: React.FC<StatsCardProps> = ({
   title,
   value,
   type = "",
+  onClick,
 }) => {
   return (
-    <div className={`stat__card ${type}`}>
+    <div onClick={onClick} className={`stat__card ${type}`}>
       <div className={`stat__card--icon ${type}__icon`}>{icon}</div>
       <div className="stat__card--content">
         <p>{title}</p>
