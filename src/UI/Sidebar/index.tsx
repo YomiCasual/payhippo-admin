@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Logo from "../../Assets/images/payhippologo.png";
 import {
   UserIcon,
@@ -6,11 +7,17 @@ import {
   LoanIcon,
   SettingsIcon,
   DashboardIcon,
+  CollapsedIcon,
+  ExpandIcon,
 } from "../../Assets/Icons/index";
 
 const Sidebar = () => {
+  const [collapsed, setCollapsed] = useState(false);
+
+  const toggleCollapsed = () => setCollapsed(!collapsed);
+
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${collapsed && "sidebar-collapsed"}`}>
       <div className="sidebar__logo">
         <img data-testid="logo" src={Logo} alt="payhippo-logo" />
       </div>
@@ -36,9 +43,14 @@ const Sidebar = () => {
             <SettingsIcon />
             <span>Settings</span>
           </li>
+
           <li>
             <LogoutIcon />
             <span>Logout</span>
+          </li>
+          <li onClick={toggleCollapsed}>
+            {collapsed ? <ExpandIcon /> : <CollapsedIcon />}
+            <span>Collapse</span>
           </li>
         </ul>
       </nav>

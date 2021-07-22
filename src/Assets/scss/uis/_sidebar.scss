@@ -1,9 +1,19 @@
 .sidebar {
-  max-width: 24rem;
+  width: 24rem;
   border-right: 1px solid whitesmoke;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  transition: $main-transition;
+
+  &-collapsed {
+    width: 13rem;
+    transition: $main-transition;
+
+    li span {
+      display: none;
+    }
+  }
 
   @include responsive($desktop-s) {
     display: none;
